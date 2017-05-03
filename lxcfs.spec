@@ -1,6 +1,6 @@
 Name: lxcfs
 Version: 2.0.6
-Release: 1
+Release: 2
 Source0: https://linuxcontainers.org/downloads/lxcfs/lxcfs-%{version}.tar.gz
 Summary: Userspace filesystem to provide CGroup-aware values
 URL: http://linuxcontainers.org/lxcfs/
@@ -39,6 +39,8 @@ system through the proc masking feature.
 
 %install
 %makeinstall_std
+# default mount point
+mkdir -p %{buildroot}/var/lib/lxcfs
 
 %files
 %{_bindir}/lxcfs
@@ -48,3 +50,4 @@ system through the proc masking feature.
 %{_datadir}/lxcfs
 %{_mandir}/man1/*
 /lib/systemd/system/lxcfs.service
+/var/lib/lxcfs
