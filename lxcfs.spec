@@ -8,6 +8,7 @@ License: Apache 2
 Group: System/Kernel and hardware
 BuildRequires: pkgconfig(fuse)
 BuildRequires: pam-devel
+BuildRequires: help2man
 
 %description
 LXCFS is a simple userspace filesystem designed to work around some
@@ -31,7 +32,7 @@ system through the proc masking feature.
 
 %prep
 %setup -q
-%configure
+%configure --with-init-script=systemd
 
 %build
 %make
@@ -46,3 +47,4 @@ system through the proc masking feature.
 %{_datadir}/lxc
 %{_datadir}/lxcfs
 %{_mandir}/man1/*
+/lib/systemd/system/lxcfs.service
