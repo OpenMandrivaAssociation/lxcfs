@@ -49,5 +49,5 @@ mkdir -p %{buildroot}/var/lib/lxcfs
 %{_datadir}/lxc
 %{_datadir}/lxcfs
 %{_mandir}/man1/*
-/lib/systemd/system/lxcfs.service
+%{_systemunitdir}/lxcfs.service
 /var/lib/lxcfs
