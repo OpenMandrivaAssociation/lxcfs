@@ -3,7 +3,7 @@ Version: 2.0.6
 Release: 4
 Source0: https://linuxcontainers.org/downloads/lxcfs/lxcfs-%{version}.tar.gz
 Summary: Userspace filesystem to provide CGroup-aware values
-URL: http://linuxcontainers.org/lxcfs/
+URL: https://linuxcontainers.org/lxcfs/
 License: Apache 2
 Group: System/Kernel and hardware
 BuildRequires: pkgconfig(fuse)
