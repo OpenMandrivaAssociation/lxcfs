@@ -6,6 +6,11 @@ Summary: Userspace filesystem to provide CGroup-aware values
 URL: https://linuxcontainers.org/lxcfs/
 License: Apache 2
 Group: System/Kernel and hardware
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires: pkgconfig(fuse)
 BuildRequires: pam-devel
 BuildRequires: help2man
